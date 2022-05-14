@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container img {
+        width: 95%;
+        height: 600px;
+        object-fit: cover;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    .container #btn1 i {
+        font-size: 70px;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 280px;
+        left: 60px;
+        color: #fff;
+    }
+    
+    .container #btn2 i {
+        font-size: 70px;
+        border: none;
+        outline: none;
+        position: absolute;
+        right: 70px;
+        bottom: 313px;
+        color: #fff;
+    }
+    
+    .container #btn1 i:hover,
+    .container #btn2 i:hover {
+        color: blue;
+    }
+    
+    .container .line {
+        width: 3px;
+        height: 7px;
+        background-color: blue;
+        position: absolute;
+        top: 30px;
+        left: 28px;
+        transition: all 0.6s;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="line" id="line1"></div>
+        <button class="btn" id="btn1"><i class="fa-solid fa-angle-left"></i></button>
+        <img id="img" src="img/1.jpg" alt="">
+        <button class="btn" id="btn2" onclick="batn()"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
